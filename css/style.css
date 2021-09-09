@@ -4,6 +4,7 @@
 Colours used:
 Primary: #000000 Black
 Secondary or Heading 1 - #B77b36
+Buttons - #b8860b
 Background Colour - #F5F5F5
 */
 body {
@@ -44,27 +45,27 @@ img {
   width: 100%;
 }
 a {
-  color: #ff7f50;
+  color: #B77b36;
   text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #cc6540;
+  color: ##b8860b;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #B77b36;
 }
 a:active { /* selected link */
-  color: #994c30;
+  color: #b8860b;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
+  background-color: #B77b36;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #B77b36; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
