@@ -7,7 +7,9 @@ Secondary or Heading 1 - #B77b36
 Buttons - #b8860b
 Background Colour - #F5F5F5
 */
-
+*{
+  box-sizing: border-box;
+}
 
 body {
   background-color: #F5F5F5;
@@ -89,6 +91,8 @@ a:active { /* selected link */
 }
 .logo {
   max-width: 250px;
+  display: inline-block;
+
 }
 header {
   background-color: #000000;
@@ -110,17 +114,28 @@ nav > ul > li > a {
 }
 #hero {
   background-color: #B77b36;
+  text-align: center;
+  padding-bottom: 1em;
 }
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
 }
-main {
-  padding-top: 133px;
-}
+
 footer {
   background-color: #000000;
   color: "white";
   text-align: center;
   padding: 10px 0;
+}
+.social {
+  text-align: center;
+}
+.social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.social svg{
+  width: 50px;
+  height: auto;
 }
