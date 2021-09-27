@@ -11,10 +11,13 @@ Background Colour - #F5F5F5
   box-sizing: border-box;
 }
 
+header {
+  text-align: unset;
+}
 body {
   background-color: #F5F5F5;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -72,6 +75,7 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #B77b36; /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -82,7 +86,12 @@ a:active { /* selected link */
   padding: 0 15px;
 }
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+ }/* 25px top and bottom, 0 left and right */
+ row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #relevant-skill .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
@@ -138,4 +147,24 @@ footer {
 .social svg{
   width: 50px;
   height: auto;
+}
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  [class*="col-"] {
+  float: left;
+}
+
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1440px) {
 }
