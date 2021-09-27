@@ -69,7 +69,7 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #B77b36;
-  color: #ffffff; /* needed to override the default link color */
+  color: #FFFFFF; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -181,7 +181,7 @@ footer {
   clear: both;
   display: table;
 }
-}
+
 @media only screen and (min-width: 1024px) {
 }
 .col-lg-1 {width: 8.33%;}
@@ -197,4 +197,26 @@ footer {
 .col-lg-11 {width: 91.66%;}
 .col-lg-12 {width: 100%;}
 @media only screen and (min-width: 1440px) {
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
