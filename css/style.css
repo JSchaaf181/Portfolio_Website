@@ -10,9 +10,10 @@ Background Colour - #F5F5F5
 }
 
 header {
-  text-align: unset;
 }
-
+main {
+  padding-top: 56px;
+}
 body {
   background-color: #F5F5F5;
   font-family: 'Roboto', sans-serif;
@@ -142,19 +143,14 @@ a:active {
 
 header {
   background-color: #000000;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
-
+/*Base code section*/
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0;
 }
-
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -162,6 +158,35 @@ nav>ul>li>a {
   color: #4a4a4a;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+  min-width: 641px
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  padding-right:0;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 #hero {
   background-color: #B77b36;
   text-align: center;
@@ -319,6 +344,7 @@ footer {
   width: 100%;
 }
 }
+
 @media only screen and (min-width: 1440px) {}
 
 @keyframes color-change {
