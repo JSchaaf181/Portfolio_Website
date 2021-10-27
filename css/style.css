@@ -293,8 +293,9 @@ footer {
   clear: both;
   display: table;
 }
+
 }
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
 
 .col-lg-1 {
   width: 8.33%;
@@ -342,6 +343,12 @@ footer {
 
 .col-lg-12 {
   width: 100%;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 }
 
