@@ -149,7 +149,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: 1em 0;
+  margin: 0;
 }
 nav>ul>li>a {
   padding: 0 15px;
@@ -160,7 +160,6 @@ nav>ul>li>a {
 
 .navtoggle li:not(:last-child) {
   display: none;
-  min-width: 641px
 }
 .navtoggle, .navtoggle.responsive {
   position: relative;
@@ -197,6 +196,9 @@ nav>ul>li>a {
   margin: 0;
   padding: 0.67em 0;
 }
+nav > ul > li {
+  display: inline-block;
+}
 
 footer {
   background-color: #000000;
@@ -230,12 +232,29 @@ footer {
     float: right;
     margin-top: 4px;
   }
-
+  nav > ul {
+  margin: 1em 0;
+}
+navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 0;
+}
+.navtoggle.responsive li  {
+  padding: 0;
+  border-top: 0);
+}
   [class*="col-"] {
     float: left;
     padding: 10px;
   }
-
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
   .row [class*="col-"]:first-child {
     padding: 10px 0 10px 10px;
   }
@@ -343,12 +362,6 @@ footer {
 
 .col-lg-12 {
   width: 100%;
-}
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
 }
 }
 
