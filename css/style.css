@@ -3,7 +3,8 @@ Colours used:
 Primary: #000000 Black
 Secondary or Heading 1 - #B77b36
 Buttons - #b8860b
-Background Colour - #F5F5F5
+Background Colour - ##98662D
+
 */
 * {
   box-sizing: border-box;
@@ -15,7 +16,7 @@ main {
   padding-top: 56px;
 }
 body {
-  background-color: #F5F5F5;
+  background-color: ##98662D;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -236,7 +237,7 @@ footer {
   margin: 1em 0;
 }
 navtoggle.responsive li  {
-  display: block;
+  display: inline-block;
 }
 .navtoggle.responsive nav {
   padding: 0;
@@ -313,7 +314,7 @@ navtoggle.responsive li  {
   display: table;
 }
 
-}
+
 @media only screen and (min-width: 1024px) {
 
 .col-lg-1 {
