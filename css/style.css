@@ -16,7 +16,7 @@ main {
   padding-top: 56px;
 }
 body {
-  background-color: ##98662D;
+  background-color: #98662D;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -412,4 +412,5 @@ navtoggle.responsive li  {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
 }
