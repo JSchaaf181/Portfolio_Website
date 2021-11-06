@@ -3,7 +3,7 @@ Colours used:
 Primary: #000000 Black
 Secondary or Heading 1 - #B77b36
 Buttons - #b8860b
-Background Colour - ##98662D
+Background Colour - ##FFFFFF
 
 */
 * {
@@ -16,7 +16,7 @@ main {
   padding-top: 56px;
 }
 body {
-  background-color: #98662D;
+  background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
